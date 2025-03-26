@@ -1,0 +1,84 @@
+.notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    animation: slideIn 0.3s ease-out;
+    max-width: 350px;
+    width: 100%;
+  }
+  
+  @keyframes slideIn {
+    from {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  .notification.success {
+    background-color: #181a18;
+    border: 1px solid #c2e0c2;
+    color: #2c5e2c;
+  }
+  
+  .notification.error {
+    background-color: #020202;
+    border: 1px solid #f0c2c2;
+    color: #5e2c2c;
+  }
+  
+  .notification.warning {
+    background-color: #000000;
+    border: 1px solid #ffe0b2;
+    color: #5e4c2c;
+  }
+  
+  .notification .icon {
+    margin-right: 15px;
+    width: 24px;
+    height: 24px;
+  }
+  
+  .notification .success-icon {
+    color: #2c5e2c;
+  }
+  
+  .notification .error-icon {
+    color: #5e2c2c;
+  }
+  
+  .notification .warning-icon {
+    color: #5e4c2c;
+  }
+  
+  .notification-content {
+    flex-grow: 1;
+    margin-right: 10px;
+  }
+  
+  .notification-content p {
+    margin: 0;
+    font-size: 14px;
+  }
+  
+  .close-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.5);
+    transition: color 0.2s;
+    padding: 0;
+  }
+  
+  .close-button:hover {
+    color: rgba(0, 0, 0, 0.8);
+  }

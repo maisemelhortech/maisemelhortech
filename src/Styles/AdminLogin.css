@@ -1,0 +1,152 @@
+/* AdminLogin.css */
+.admin-container {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f9fafb;
+    padding: 3rem 1rem;
+  }
+  
+  .admin-card {
+    max-width: 28rem;
+    width: 100%;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  }
+  
+  .admin-header {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .admin-title {
+    font-size: 1.875rem;
+    font-weight: 700;
+    color: #1a407a;
+  }
+  
+  .admin-subtitle {
+    margin-top: 0.5rem;
+    color: #4b5563;
+    font-size: 0.95rem;
+  }
+  
+  .admin-form {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .form-error {
+    background-color: #fef2f2;
+    color: #b91c1c;
+    padding: 0.75rem;
+    border-radius: 0.375rem;
+    font-size: 0.875rem;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+
+  }
+  
+  .form-label {
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #374151;
+    margin-bottom: 0.25rem;
+  }
+  
+  .input-wrapper {
+    position: relative;
+    margin-left: 20px;
+  }
+  
+  .input-icon {
+    position: absolute;
+    top: 50%;
+    margin-left: -45px;
+    left: 0.75rem;
+    transform: translateY(-50%);
+    color: #9ca3af;
+    pointer-events: none;
+  }
+  
+  .form-input {
+    display: block;
+    width: 80%;
+    margin-left: -10px;
+    padding: 0.5rem 0.75rem 0.5rem 2.5rem;
+    border: 1px solid #d1d5db;
+    border-radius: 0.375rem;
+    font-size: 0.875rem;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  }
+  
+  .form-input:focus {
+    outline: none;
+    border-color: #1a407a;
+    box-shadow: 0 0 0 3px rgba(26, 64, 122, 0.1);
+  }
+  
+  .forgot-password {
+    text-align: right;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+  }
+  
+  .forgot-password a {
+    color: #1a407a;
+    text-decoration: none;
+  }
+  
+  .forgot-password a:hover {
+    text-decoration: underline;
+  }
+  
+  .submit-button {
+    position: relative;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    font-weight: 500;
+    color: white;
+    background-color: #1a407a;
+    border: 1px solid transparent;
+    border-radius: 0.375rem;
+    cursor: pointer;
+    transition: background-color 0.15s ease-in-out;
+  }
+  
+  .submit-button:hover:not(:disabled) {
+    background-color: #0f2c56;
+  }
+  
+  .submit-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(26, 64, 122, 0.5);
+  }
+  
+  .submit-button:disabled {
+    background-color: #9ca3af;
+    cursor: not-allowed;
+  }
+  
+  .button-icon {
+    margin-left: 0.5rem;
+  }
+  
+  .demo-credentials {
+    text-align: center;
+    font-size: 0.875rem;
+    margin-top: 1.5rem;
+  }

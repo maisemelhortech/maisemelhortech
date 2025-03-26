@@ -1,0 +1,37 @@
+ 
+  /* Menu de categorias no topo do footer */
+  .footer-categories {
+    background-color: #FFA8BE;
+    padding: 20px 0;
+  }
+  
+  .footer-categories-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 16px;
+  }
+  
+  .footer-categories-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+  }
+  
+  .footer-category-link {
+    color: #204482;
+    text-decoration: none;
+    font-family: Poppins, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 5px 10px;
+    transition: all 0.3s ease;
+  }
+  
+  .footer-category-link:hover {
+    text-decoration: none;
+    transform: translateY(-2px);
+    color: #163666;
+  }
+  

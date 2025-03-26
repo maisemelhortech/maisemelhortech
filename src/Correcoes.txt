@@ -1,0 +1,5 @@
+Coisas ainda a serem corrigidas.
+1. Criar página de Cadastro para cliente Comum e Login para cliente comum tabém! O cliente só pode comprar os produtos caso esteja cadastrado na lista de cadastro no Cadastro.js
+
+2. Verificação de saldo do Cliente para finalizar a compra! Se não tiver o saldo suficiente, o cliente recebe um aviso na tela dizendo que não possui saldo suficiente e sua compra é recusada. (Os itens no carrinho permanecem (persistência))
+

@@ -1,0 +1,232 @@
+/* RelatoriosTab.css */
+.relatorios-container {
+    font-family: 'Inter', sans-serif;
+  }
+  
+  .relatorios-card {
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .relatorios-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #1a407a;
+    margin-bottom: 1rem;
+  }
+  
+  .relatorios-form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  @media (max-width: 768px) {
+    .relatorios-form-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  .relatorios-form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .relatorios-form-label {
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #374151;
+    margin-bottom: 0.25rem;
+  }
+  
+  .relatorios-form-select {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #d1d5db;
+    border-radius: 0.375rem;
+    font-size: 0.875rem;
+  }
+  
+  .relatorios-button {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: #1a407a;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 0.875rem;
+    transition: background-color 0.2s;
+  }
+  
+  .relatorios-button:hover {
+    background-color: #0f2c56;
+  }
+  
+  .relatorios-button-icon {
+    width: 18px;
+    height: 18px;
+  }
+  
+  .relatorios-loading {
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+  
+  @keyframes pulse {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.5;
+    }
+  }
+  
+  .relatorios-loading-title {
+    height: 2rem;
+    background-color: #e5e7eb;
+    width: 25%;
+    margin-bottom: 1rem;
+    border-radius: 0.25rem;
+  }
+  
+  .relatorios-loading-content {
+    height: 16rem;
+    background-color: #e5e7eb;
+    border-radius: 0.25rem;
+  }
+  
+  .relatorios-grid {
+    display: grid;
+    gap: 1.5rem;
+  }
+  
+  .chart-container {
+    width: 100%;
+    height: 350px;
+  }
+  
+  .chart-container-md {
+    width: 100%;
+    height: 300px;
+  }
+  
+  .relatorios-grid-2col {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  @media (min-width: 768px) {
+    .relatorios-grid-2col {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  .stats-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .stats-card {
+    background-color: #f9fafb;
+    padding: 1rem;
+    border-radius: 0.5rem;
+  }
+  
+  .stats-label {
+    font-size: 0.875rem;
+    color: #6b7280;
+  }
+  
+  .stats-value {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #1a407a;
+  }
+  
+  .payment-list {
+    margin-top: 0.5rem;
+  }
+  
+  .payment-list-title {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #6b7280;
+    margin-bottom: 0.5rem;
+  }
+  
+  .payment-list-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+  }
+  
+  .payment-method {
+    font-size: 0.875rem;
+    color: #374151;
+  }
+  
+  .payment-value {
+    font-weight: 500;
+    color: #374151;
+  }
+  
+  .table-container {
+    width: 100%;
+    overflow-x: auto;
+  }
+  
+  .relatorios-table {
+    min-width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+  }
+  
+  .relatorios-table-header {
+    background-color: #f9fafb;
+  }
+  
+  .relatorios-table-header th {
+    padding: 0.75rem 1.5rem;
+    text-align: left;
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: #6b7280;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    border-bottom: 1px solid #e5e7eb;
+  }
+  
+  .relatorios-table-body tr {
+    border-bottom: 1px solid #e5e7eb;
+  }
+  
+  .relatorios-table-body td {
+    padding: 1rem 1.5rem;
+    font-size: 0.875rem;
+    white-space: nowrap;
+  }
+  
+  .relatorios-table-data-primary {
+    font-weight: 500;
+    color: #111827;
+  }
+  
+  .relatorios-table-data {
+    color: #6b7280;
+  }

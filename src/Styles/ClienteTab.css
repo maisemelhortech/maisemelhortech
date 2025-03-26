@@ -1,0 +1,267 @@
+/* ClienteTab.css */
+.clientes-container {
+    width: 100%;
+  }
+  
+  .clientes-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1.5rem;
+    gap: 1rem;
+  }
+  
+  @media (min-width: 768px) {
+    .clientes-header {
+      flex-direction: row;
+      align-items: center;
+    }
+  }
+  
+  /* Ajuste no search container */
+.search-container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    margin-left: -50px;
+    align-items: center;
+  }
+  
+  @media (min-width: 768px) {
+    .search-container {
+      width: 16rem;
+    }
+  }
+  
+  /* Ajuste no ícone de pesquisa */
+  .search-icon {
+    position: absolute;
+    left: 2rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #9ca3af;
+    pointer-events: none;
+  }
+  
+  /* Ajuste no input de pesquisa */
+  .search-input {
+    padding-left: 2.5rem;
+    padding-right: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    width: 100%;
+    border: 1px solid #d1d5db;
+    border-radius: 0.5rem;
+    height: 38px;
+  }
+  .new-client-button {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: #1a407a;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .new-client-button:hover {
+    background-color: #0f2c56;
+  }
+  
+  .clientes-table-container {
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    overflow: hidden;
+  }
+  
+  .clientes-table {
+    min-width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+  }
+  
+  .table-header {
+    background-color: #f9fafb;
+  }
+  
+  .table-header th {
+    padding: 0.75rem 1.5rem;
+    text-align: left;
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: #6b7280;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+  
+  .table-header th:last-child {
+    text-align: right;
+  }
+  
+  .table-body tr {
+    background-color: white;
+  }
+  
+  .table-body tr:not(:last-child) {
+    border-bottom: 1px solid #e5e7eb;
+  }
+  
+  .table-body td {
+    padding: 1rem 1.5rem;
+    white-space: nowrap;
+    font-size: 0.875rem;
+  }
+  
+  .table-data-name {
+    color: #111827;
+  }
+  
+  .table-data-secondary {
+    color: #6b7280;
+  }
+  
+  .table-actions {
+    text-align: right;
+    white-space: nowrap;
+  }
+  
+  .edit-button {
+    color: #4f46e5;
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-right: 0.75rem;
+  }
+  
+  .edit-button:hover {
+    color: #4338ca;
+  }
+  
+  .delete-button {
+    color: #dc2626;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .delete-button:hover {
+    color: #b91c1c;
+  }
+  
+  /* Modal styles */
+  .modal-overlay {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    z-index: 50;
+  }
+  
+  .modal-container {
+    background-color: white;
+    border-radius: 0.5rem;
+    max-width: 28rem;
+    width: 100%;
+    padding: 1.5rem;
+  }
+  
+  .modal-title {
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: #111827;
+  }
+  
+  .modal-content {
+    margin-top: 0.5rem;
+    color: #4b5563;
+  }
+  
+  .modal-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.75rem;
+    margin-top: 1rem;
+  }
+  
+  .button-cancel {
+    padding: 0.5rem 1rem;
+    border: 1px solid #d1d5db;
+    border-radius: 0.375rem;
+    color: #374151;
+    background-color: white;
+    cursor: pointer;
+  }
+  
+  .button-cancel:hover {
+    background-color: #f9fafb;
+  }
+  
+  .button-delete {
+    padding: 0.5rem 1rem;
+    background-color: #dc2626;
+    color: white;
+    border: none;
+    border-radius: 0.375rem;
+    cursor: pointer;
+  }
+  
+  .button-delete:hover {
+    background-color: #b91c1c;
+  }
+  
+  /* Form styles for modal de novo cliente/edição */
+  .form-group {
+    margin-bottom: 1rem;
+  }
+  
+  .form-label {
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #374151;
+    margin-bottom: 0.25rem;
+  }
+  
+  .form-input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #d1d5db;
+    border-radius: 0.375rem;
+  }
+  
+  .form-button-container {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.75rem;
+    margin-top: 1.5rem;
+  }
+  
+  .save-button {
+    padding: 0.5rem 1rem;
+    background-color: #1a407a;
+    color: white;
+    border: none;
+    border-radius: 0.375rem;
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    cursor: pointer;
+  }
+  
+  .save-button:hover {
+    background-color: #0f2c56;
+  }
+  
+  /* Adiciona estilo para mostrar o status de carregamento */
+  .loading {
+    text-align: center;
+    padding: 2rem;
+    color: #6b7280;
+  }

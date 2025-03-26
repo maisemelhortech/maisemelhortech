@@ -1,0 +1,322 @@
+.vendas-container {
+    padding: 20px;
+  }
+  
+  .vendas-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .vendas-title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #1e3a8a;
+  }
+  
+  .admin-badge {
+    color: #6b7280;
+    font-size: 14px;
+  }
+  
+  .search-container {
+    position: relative;
+    width: 100%;
+    max-width: 350px;
+    margin-bottom: 20px;
+  }
+  
+  .search-icon {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #9ca3af;
+  }
+  
+  .search-input {
+    width: 100%;
+    padding: 10px 10px 10px 40px;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #374151;
+  }
+  
+  .vendas-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  }
+  
+  .vendas-table-header {
+    background-color: #f9fafb;
+    border-bottom: 1px solid #e5e7eb;
+  }
+  
+  .vendas-table-header th {
+    padding: 12px 16px;
+    font-size: 12px;
+    font-weight: 500;
+    color: #6b7280;
+    text-transform: uppercase;
+    text-align: left;
+  }
+  
+  .vendas-table-row {
+    cursor: pointer;
+    border-bottom: 1px solid #e5e7eb;
+    transition: background-color 0.2s;
+  }
+  
+  .vendas-table-row:hover {
+    background-color: #f9fafb;
+  }
+  
+  .vendas-table-row td {
+    padding: 16px;
+    font-size: 14px;
+    color: #4b5563;
+  }
+  
+  .vendas-data {
+    white-space: nowrap;
+  }
+  
+  .cliente-info {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .cliente-nome {
+    font-weight: 500;
+    color: #374151;
+  }
+  
+  .cliente-cpf {
+    font-size: 12px;
+    color: #6b7280;
+  }
+  
+  .vendas-total {
+    font-weight: 600;
+    color: #374151;
+  }
+  
+  .metodo-pagamento {
+    color: #4b5563;
+  }
+  
+  .status-badge {
+    display: inline-flex;
+    padding: 2px 8px;
+    border-radius: 9999px;
+    font-size: 12px;
+    font-weight: 600;
+  }
+  
+  .status-concluida {
+    background-color: #dcfce7;
+    color: #16a34a;
+  }
+  
+  .status-pendente {
+    background-color: #fee2e2;
+    color: #dc2626;
+  }
+  
+  .detalhes-icon {
+    color: #9ca3af;
+  }
+  
+  .detalhes-icon:hover {
+    color: #6b7280;
+  }
+  
+  .empty-message {
+    text-align: center;
+    padding: 16px;
+    color: #6b7280;
+  }
+  
+  /* Modal Styles */
+  .modal-overlay {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    z-index: 50;
+  }
+  
+  .modal-container {
+    background-color: white;
+    border-radius: 8px;
+    max-width: 600px;
+    width: 100%;
+    max-height: 90vh;
+    overflow-y: auto;
+  }
+  
+  .modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    border-bottom: 1px solid #e5e7eb;
+  }
+  
+  .modal-title {
+    font-size: 18px;
+    font-weight: 500;
+    color: #111827;
+  }
+  
+  .close-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #9ca3af;
+  }
+  
+  .close-button:hover {
+    color: #6b7280;
+  }
+  
+  .modal-body {
+    padding: 16px;
+  }
+  
+  .venda-info-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    margin-bottom: 24px;
+  }
+  
+  .info-group h4 {
+    font-size: 12px;
+    font-weight: 500;
+    color: #6b7280;
+    margin-bottom: 4px;
+  }
+  
+  .info-group p {
+    color: #374151;
+  }
+  
+  .items-section h4 {
+    font-size: 12px;
+    font-weight: 500;
+    color: #6b7280;
+    margin-bottom: 8px;
+  }
+  
+  .items-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #e5e7eb;
+    border-radius: 6px;
+    overflow: hidden;
+  }
+  
+  .items-table th {
+    background-color: #f9fafb;
+    padding: 8px 16px;
+    font-size: 12px;
+    font-weight: 500;
+    color: #6b7280;
+    text-align: left;
+  }
+  
+  .items-table td {
+    padding: 8px 16px;
+    font-size: 13px;
+    border-top: 1px solid #e5e7eb;
+  }
+  
+  .items-produto {
+    color: #111827;
+  }
+  
+  .items-preco, .items-quantidade {
+    color: #6b7280;
+  }
+  
+  .items-subtotal {
+    font-weight: 500;
+    color: #111827;
+  }
+  
+  .total-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 16px;
+    margin-top: 16px;
+    border-top: 1px solid #e5e7eb;
+  }
+  
+  .total-label {
+    font-size: 14px;
+    font-weight: 500;
+    color: #6b7280;
+  }
+  
+  .total-value {
+    font-size: 18px;
+    font-weight: 700;
+    color: #111827;
+  }
+  
+  /* Loading States */
+  .skeleton {
+    background-color: #e5e7eb;
+    border-radius: 4px;
+    animation: pulse 1.5s infinite;
+  }
+  
+  @keyframes pulse {
+    0%, 100% {
+      opacity: 0.5;
+    }
+    50% {
+      opacity: 0.8;
+    }
+  }
+  
+  .loading-container {
+    background-color: white;
+    border-radius: 8px;
+    padding: 24px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  }
+  
+  .loading-title {
+    height: 24px;
+    width: 25%;
+    margin-bottom: 16px;
+  }
+  
+  .loading-row {
+    padding-bottom: 12px;
+    margin-bottom: 12px;
+    border-bottom: 1px solid #e5e7eb;
+  }
+  
+  .loading-cell-large {
+    height: 16px;
+    width: 75%;
+    margin-bottom: 8px;
+  }
+  
+  .loading-cell-small {
+    height: 14px;
+    width: 50%;
+  }

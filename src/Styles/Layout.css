@@ -1,0 +1,136 @@
+/* Footer.css */
+
+
+/* Estilos para o header principal */
+.main-header {
+    background-color: #204482;
+    padding: 0;
+  }
+  
+  .main-header .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 ;
+  }
+  
+  .main-header .flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px; /* Altura específica para o header */
+  }
+
+  .flex nav {
+    display: flex;
+    gap: 32px;
+    margin-right: 800px; 
+  }
+  
+  /* Estilos para o logo */
+  .logo-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo-container img {
+    height: 80px;
+    margin-left: 50px;
+  }
+  
+  /* Estilos para os links de navegação */
+  .nav-menu {
+    display: flex;
+    gap: 32px; /* Espaçamento entre os links conforme imagem */
+  }
+  
+  .nav-link {
+    color: white;
+    text-decoration: none;
+    font-family: Poppins, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    color: #FFA8BE;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .nav-menu.hidden {
+      display: none;
+    }
+  }
+
+/* Estilos gerais */
+.layout-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  
+  /* Estilos do footer principal */
+  .main-footer {
+    background-color: #204482;
+    font-family: Poppins, sans-serif;
+    padding: 40px 0;
+  }
+  
+  .footer-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 16px;
+  }
+  
+  .footer-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  
+  @media (min-width: 768px) {
+    .footer-content {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+    }
+  }
+  
+  .footer-section h3 {
+    color: #FFA8BE;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    font-family: Poppins, sans-serif;
+  }
+  
+  .footer-section p {
+    color: white;
+    font-family: Poppins, sans-serif;
+    font-size: 16px;
+    margin: 8px 0;
+    line-height: 1.5;
+  }
+  
+  /* Copyright text */
+  .footer-copyright {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+  }
+  
+  .footer-copyright p {
+    color: white;
+    font-family: Poppins, sans-serif;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .footer-section {
+      margin-bottom: 25px;
+      text-align: center;
+    }
+  }
