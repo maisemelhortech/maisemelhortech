@@ -17,9 +17,9 @@ Para iniciar o projeto, antes é necessário dar os seguintes comandos:
 
 - **cd maisemelhortech**
 - npm install @craco/craco
-- npm instalar jspdf
-- npm instalar react-router-dom
-- npm instalar lucide-react
+- npm install jspdf
+- npm install react-router-dom
+- npm install lucide-react
 - npm install recarrega
 
 Por fim, dê o comando abaixo para rodar no localhost o projeto.
