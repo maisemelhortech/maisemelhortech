@@ -20,7 +20,7 @@ Para iniciar o projeto, antes é necessário dar os seguintes comandos:
 - npm install jspdf
 - npm install react-router-dom
 - npm install lucide-react
-- npm install recarrega
+- npm install recharts
 
 Por fim, dê o comando abaixo para rodar no localhost o projeto.
 
