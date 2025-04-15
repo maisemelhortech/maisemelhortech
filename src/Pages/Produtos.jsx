@@ -106,7 +106,6 @@ export default function Produtos() {
         />
       ))}
 
-      {/* Rest of the existing JSX remains the same */}
       <div className="produtos-cabecalho">
         <h1 className="produtos-titulo">
           {categoriaAtual ? `Produtos: ${categoriaAtual}` : "Todos os Produtos"}
@@ -119,7 +118,6 @@ export default function Produtos() {
         </p>
       </div>
       
-      {/* Rest of the component code remains the same */}
       <div className="filtros-container">
         <div className="filtros-cabecalho">
           <h2 className="filtros-titulo">
@@ -151,7 +149,6 @@ export default function Produtos() {
         )}
       </div>
       
-      {/* Rest of the rendering logic remains the same */}
       {carregando ? (
         <div className="produtos-grid">
           {[...Array(8)].map((_, index) => (

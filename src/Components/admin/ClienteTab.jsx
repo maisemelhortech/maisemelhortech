@@ -50,7 +50,6 @@ export default function ClientesTab() {
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     
-    // Special handling for CPF formatting
     if (name === 'cpf') {
       const cpfRaw = value.replace(/\D/g, '');
       
@@ -70,7 +69,6 @@ export default function ClientesTab() {
         [name]: formattedCpf
       }));
     } else {
-      // Default handling for other fields
       setFormData((prev) => ({
         ...prev,
         [name]: value
@@ -127,7 +125,6 @@ export default function ClientesTab() {
           };
         }
       } else {
-        // Correção: deve ser Cliente.create em vez de Cliente.update para novos clientes
         const novoCliente = await Cliente.create(formData);
         
         // Se a API não retornar um ID, geramos um temporário

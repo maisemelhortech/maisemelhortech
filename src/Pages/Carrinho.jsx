@@ -139,7 +139,7 @@ export default function Carrinho() {
     }
   };
 
-  // Nova implementação usando jsPDF - Agora usando os itens da compra finalizada
+  //  Implementação usando jsPDF - usando os itens da compra finalizada
   const gerarPDF = () => {
     try {
       const doc = new jsPDF();
@@ -320,7 +320,7 @@ export default function Carrinho() {
       
       // Salvar os dados da compra antes de limpar o carrinho
       setCompraFinalizada({
-        itens: [...itensCarrinho], // Cópia profunda dos itens
+        itens: [...itensCarrinho], // Cópia profunda dos itens (Pegar os antigos já também)
         valorTotal: total,
         clienteCpf: clienteCpf,
         metodoPagamento: metodoPagamento,
@@ -357,7 +357,6 @@ export default function Carrinho() {
       // Persistir a venda no localStorage para garantir que esteja disponível no VendasTab
       salvarVendaNoLocalStorage(venda || vendaObj);
       
-      // CORREÇÃO: Atualizar estoque dos produtos corretamente
       for (const item of itensCarrinho) {
         try {
           const produtoId = item.produto_id || item.produto.id;
