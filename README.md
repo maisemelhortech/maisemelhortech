@@ -1,70 +1,69 @@
-# Getting Started with Create React App
+# 🛒 Mais & Melhor
+### 📝 Descrição
+**Mais & Melhor** é uma plataforma de e-commerce de mercado online que permite aos usuários visualizar produtos, adicionar itens ao carrinho e gerenciar suas compras. Atualmente na versão Beta, o sistema oferece uma experiência completa de compra virtual, porém ainda não disponibiliza o serviço de entregas.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### 🧍Integrantes
 
-## Available Scripts
 
-In the project directory, you can run:
+- Maitê Luiza da Silva Pereira
+- Pedro Henrique Vicente Duarte
+- Artur Formigoni Santos da Cruz
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### ▶ Inicializar o Projeto
+Para iniciar o projeto, antes é necessário dar os seguintes comandos: 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+**É necessário primeiro entrar na pasta maisemelhortech** para dessa forma instalar todas as bibliotecas que utilizamos nela.
 
-### `npm test`
+- **cd maisemelhortech**
+- npm install @craco/craco
+- npm install jspdf
+- npm install react-router-dom
+- npm install lucide-react
+- npm install recharts
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Por fim, dê o comando abaixo para rodar no localhost o projeto.
 
-### `npm run build`
+- **npm start**
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### ⚙ Funcionalidades
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Catálogo de produtos.
+- Adição e remoção de produtos no carrinho.
+- Altere a quantidade de itens no carrinho.
+- Visualização de produtos do carrinho.
+- Autenticação de usuário.
+- Gestão do sistema
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 👩‍💻 Tecnologias usadas
 
-### `npm run eject`
+**Front-end**
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- React: Biblioteca JavaScript para construção de interfaces dinâmicas de usuário.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- JavaScript: Linguagem principal utilizada no desenvolvimento do projeto.
+- React Router Dom: Biblioteca para gerenciamento de rotas, permitindo navegação entre páginas.
+- Lucide React: Biblioteca de ícones SVG para enriquecer a interface do usuário.
+- CRACO (Create React App Configuration Override): Ferramenta para personalizar a configuração do Create React App.
+- HTML: Estruturação do conteúdo das páginas.
+- CSS: Estilização dos componentes para aprimorar a experiência do usuário.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+**Back-end**
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- Node.js: Ambiente de execução JavaScript no lado do servidor.
+- API: Comunicação com interfaces de programação de aplicações para busca e atualização de dados.
 
-## Learn More
+**Para a Nota Fiscal**
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- jsPDF: Biblioteca para criação e exportação de arquivos PDF.
+- FileSaver.js: Biblioteca para facilitar o download de arquivos diretamente no navegador.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### ⚠️ Limitações Conhecidas
 
-### Code Splitting
+- Ausência de Banco de Dados : Atualmente, o sistema não possui integração com banco de dados persistente.
+- Sem Serviço de Entregas : Por estar na versão Beta, uma plataforma ainda não oferece o serviço de entregas.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+# Informações de Licença
+Este projeto está licenciado sob a [Licença MIT](LICENSE). 
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Consulte o arquivo LICENSE.
