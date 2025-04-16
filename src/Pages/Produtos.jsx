@@ -15,7 +15,7 @@ export default function Produtos() {
   const [notifications, setNotifications] = useState([]);
 
   const addNotification = (message, type = 'success') => {
-    const id = Date.now(); // Unique identifier
+    const id = Date.now();
     const newNotification = { id, message, type };
     setNotifications(prev => [...prev, newNotification]);
   };
